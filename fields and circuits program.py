@@ -75,7 +75,7 @@ if figure == "trojkat" or figure == "4":  ##############TRIANGLE
             break
         except ValueError:
             print("Podaj poprawna wartosc!")
-    type_of = Triangle(a, b, c)
+    figure_chosen = Triangle(a, b, c)
 
 if (
     figure == "prostokat" or figure == "kwadrat" or figure in ["1", "2"]
@@ -88,7 +88,7 @@ if (
             break
         except ValueError:
             print("Podaj poprawna wartosc!")
-    type_of = Rectangle(a, b)
+    figure_chosen = Rectangle(a, b)
 
 if figure == "kolo" or figure == "3":  ##############CIRCLE
     while True:
@@ -97,8 +97,8 @@ if figure == "kolo" or figure == "3":  ##############CIRCLE
             break
         except ValueError:
             print("Podaj poprawna wartosc!")
-    type_of = Circle(r)
+    figure_chosen = Circle(r)
 
-print("Pole wynosi:", type_of.area())
-print("Obwod wynosi:", type_of.perimeter())
+print("Pole wynosi:", figure_chosen.area())
+print("Obwod wynosi:", figure_chosen.perimeter())
 waiting = input("press enter to end")
