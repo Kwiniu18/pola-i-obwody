@@ -23,7 +23,7 @@ class Triangle:
         return (self.a * self.h) / 2
 
     def is_triangle(self, a, b, c):
-        return a < b + c
+        return a < b + c and b < a + c and c < b + a
 
 
 class Rectangle:
